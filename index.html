@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Калькулятор переезда</title>
+</head>
+<body>
+  <div id="calculator">
+
+    <p><strong>Калькулятор</strong></p>
+    <p><strong>Только стандартный груз!</strong></p>
+    <p>Тип помещения</p>
+    <div>
+      <select class="calc_item" name="type" id="premise">
+        <option value="1350">Квартира</option>
+        <option value="1250">Офис</option>
+      </select>
+    </div>
+
+    <p>Объем перевозимого груза (м<sup>3</sup>)</p>
+    <p>
+      <input type="number" name="cargoVolume" id="cargoVolume" class="calc_item">
+    </p>
+
+    <div>
+      <p>Этаж</p>
+      <select class="calc_item" name="floor" id="floor"></select>
+    </div>
+
+    <div>
+      <p>Есть грузовой лифт?</p>
+      <select class="calc_item" name="isLift" id="isLift">
+        <option value="ДА">ДА</option>
+        <option value="НЕТ">НЕТ</option>
+      </select>
+    </div>
+    <p class="price_text">Цена в рублях:</p>
+    <div id="result"></div> 
+    <script src="calculator.js"></script>  
+</div>
+</body>
+</html>
+
